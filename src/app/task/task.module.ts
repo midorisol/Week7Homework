@@ -4,6 +4,7 @@ import { TaskComponent } from './task/task.component';
 import { TaskListComponent } from './task-list/task-list.component';
 import { NewTaskComponent } from './new-task/new-task.component';
 import { TaskPipe } from './task.pipe';
+import {TaskRoutingModule} from "./task-routing.module";
 
 
 
@@ -15,7 +16,8 @@ import { TaskPipe } from './task.pipe';
     TaskPipe
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    TaskRoutingModule
   ]
 })
 export class TaskModule { }
