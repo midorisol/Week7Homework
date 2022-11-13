@@ -1,12 +1,13 @@
 import { Pipe, PipeTransform } from '@angular/core';
+import {Task} from "./models/task.model";
 
 @Pipe({
   name: 'task'
 })
 export class TaskPipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(task: Task): string {
+    return `${task.name} - ${task.description} (${task.creator ?? 'Unknown'})`;
   }
 
 }

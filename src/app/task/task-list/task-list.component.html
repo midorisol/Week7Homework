@@ -1,1 +1,13 @@
-<p>task-list works!</p>
+<div>
+  <button (click)="navigateToTaskCreate()">Új feladat</button>
+  <button>Kijelentkezés</button>
+</div>
+<h2>Hátralévő feladatok</h2>
+<div *ngFor="let task of getTasks()">
+  <app-task [task]="task"></app-task>
+</div>
+<hr>
+<h2>Kész feladatok</h2>
+<div *ngFor="let task of getDoneTasks()">
+  <app-task [task]="task"></app-task>
+</div>

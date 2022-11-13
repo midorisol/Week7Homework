@@ -1,1 +1,8 @@
-<p>new-task works!</p>
+<div>
+  <input type="text" [(ngModel)]="name">
+  <input type="text" [(ngModel)]="description">
+</div>
+<div>
+  <button (click)="saveTask()">Mentés</button>
+  <button (click)="back()">Vissza</button>
+</div>

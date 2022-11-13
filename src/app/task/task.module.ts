@@ -5,6 +5,7 @@ import { TaskListComponent } from './task-list/task-list.component';
 import { NewTaskComponent } from './new-task/new-task.component';
 import { TaskPipe } from './task.pipe';
 import {TaskRoutingModule} from "./task-routing.module";
+import {FormsModule} from "@angular/forms";
 
 
 
@@ -17,7 +18,8 @@ import {TaskRoutingModule} from "./task-routing.module";
   ],
   imports: [
     CommonModule,
-    TaskRoutingModule
+    TaskRoutingModule,
+    FormsModule
   ]
 })
 export class TaskModule { }
