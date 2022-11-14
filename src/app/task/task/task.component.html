@@ -1,4 +1,4 @@
-<div>
-<span>{{task | task}}</span>
-  <button *ngIf="!task.isDone" (click)="markAsDone()">Kész</button>
+<div class="task">
+<span class="task-content">{{task | task}}</span>
+  <button class="btn" *ngIf="!task.isDone" (click)="markAsDone()">Kész</button>
 </div>

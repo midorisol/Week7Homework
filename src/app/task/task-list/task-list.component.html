@@ -1,6 +1,6 @@
-<div>
-  <button (click)="navigateToTaskCreate()">Új feladat</button>
-  <button>Kijelentkezés</button>
+<div class="btn-holder">
+  <button class="btn" (click)="navigateToTaskCreate()">Új feladat</button>
+  <button class="btn">Kijelentkezés</button>
 </div>
 <h2>Hátralévő feladatok</h2>
 <div *ngFor="let task of getTasks()">

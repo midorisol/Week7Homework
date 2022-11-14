@@ -1,8 +1,8 @@
-<div>
-  <input type="text" [(ngModel)]="name">
-  <input type="text" [(ngModel)]="description">
+<div class="input-holder">
+  <input class="npt" type="text" [(ngModel)]="name" placeholder="Név">
+  <input class="npt" type="text" [(ngModel)]="description" placeholder="Leírás">
 </div>
 <div>
-  <button (click)="saveTask()">Mentés</button>
-  <button (click)="back()">Vissza</button>
+  <button class="btn" (click)="saveTask()">Mentés</button>
+  <button class="btn" (click)="back()">Vissza</button>
 </div>

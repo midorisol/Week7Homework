@@ -1,0 +1,31 @@
+@mixin center{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login{
+  background-color: cadetblue;
+  width: 100%;
+  height: 100%;
+  display:grid;
+  padding:15rem 0rem;
+  font-family: Bicyclette;
+}
+.first-header{
+  color:white;
+  @include center;
+}
+.btn {
+  width: 4rem;
+  height: 1.5rem;
+  @include center;
+  margin-top: 10px;
+  background-color: darkolivegreen;
+  border: none;
+  border-radius: 6px;
+}
+.npt {
+  width: 10rem;
+  height: 1.5rem;
+  @include center;
+}
